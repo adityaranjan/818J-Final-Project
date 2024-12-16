@@ -1,9 +1,3 @@
-# 818J-Final-Project
-Final Project for CMSC 818J Fall 2024
-
-Here is a sample README file for the repository containing the baseline and optimized simulators for a single layer of Graph Neural Network (GNN) inference:
-
-```markdown
 # GNN Single Layer Inference Simulator
 
 This repository contains two Python scripts that simulate the inference process of a single layer in Graph Neural Networks (GNNs). The simulators are designed to evaluate the performance of baseline and optimized architectures in terms of latency and cycle efficiency.
@@ -37,8 +31,9 @@ The baseline simulator models these phases separately, while the optimized simul
 
 Both simulators are designed to work with datasets from PyTorch Geometric's Planetoid collection. The default dataset used is "Cora". To run either simulator, execute the script in a Python environment with the required dependencies installed.
 
-Example usage:
-```
+### Example usage:
+
+```python
 # For Baseline Simulator
 simulator = BaselineSimulator(Planetoid(name="Cora", root="path/to/dataset"))
 simulator.load_data()
@@ -50,15 +45,3 @@ simulator = OptimizedSimulator(Planetoid(name="Cora", root="path/to/dataset"))
 simulator.load_data()
 simulator.set_weight_matrix()
 agg_steps, total_steps = simulator.simulate()
-```
-
-## Performance Metrics
-
-The simulators provide various performance metrics, including:
-- Number of cycles for aggregation and combination phases.
-- Latency metrics: average, maximum, and minimum latencies per vertex.
-
-## Additional Documentation
-
-Each code file includes detailed documentation on classes and methods used within the simulators. Please refer to these files for further insights into their implementation.
-```
