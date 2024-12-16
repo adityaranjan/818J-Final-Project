@@ -45,3 +45,13 @@ simulator = OptimizedSimulator(Planetoid(name="Cora", root="path/to/dataset"))
 simulator.load_data()
 simulator.set_weight_matrix()
 agg_steps, total_steps = simulator.simulate()
+
+## Performance Metrics
+
+The simulators provide various performance metrics, including:
+- Number of cycles for aggregation and combination phases.
+- Latency metrics: average, maximum, and minimum latencies per vertex.
+
+## Additional Documentation
+
+Each code file includes detailed documentation on classes and methods used within the simulators. Please refer to these files for further insights into their implementation.
