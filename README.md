@@ -45,6 +45,7 @@ simulator = OptimizedSimulator(Planetoid(name="Cora", root="path/to/dataset"))
 simulator.load_data()
 simulator.set_weight_matrix()
 agg_steps, total_steps = simulator.simulate()
+```
 
 ## Performance Metrics
 
