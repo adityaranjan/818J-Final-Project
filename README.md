@@ -20,7 +20,7 @@ The baseline simulator models these phases separately, while the optimized simul
 
 - **Baseline Simulator**:
   - Utilizes 1024 MAC units by default.
-  - Implements a 32x32 systolic array by default for matrix multiplication.
+  - Uses a 32x32 systolic array by default for matrix multiplication.
   - Separates aggregation and combination phases.
 
 - **Optimized Simulator**:
